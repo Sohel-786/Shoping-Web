@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/style2.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+         <!-- header Logo -->
+         <div class="left_header">
+            <div class="hlogo">
+                <a href="/landing_page.html"><img src="/assets/logo.jpg" alt="header-logo"></a>
+            </div>
+        </div>
+
+        <a href="/sign_in_page.html">
+            <button style="position: absolute; right: 20px; top: 15.8px;">Login</button>
+        </a>
+        
+        <a href="/landing_page.html"><button style="position: absolute; right: 150px; top: 15.8px;">Home</button></a>
+        
+    </header>
+
+    <main>
+        <div id="signup_section">
+            <div>
+                <h1>Welcome&#128522;<br> Start Shopping <br> By Signing Up</h1>
+                <img class="signup_slide" src="/assets/Sign_up_image.png" alt="Signup_Images">
+            </div>
+            
+            <div class="sign_up">
+                <h1>Sign Up</h1>
+                <form>
+                    <input type="text" id="name" placeholder="Enter Your Name"> <hr><br>
+
+                    <input type="text" id="email" placeholder="Enter Your Email Address"><hr><br>
+
+                     <input type="number" id="phone" placeholder="Enter Your Phone Number (optional)"><hr><br>
+
+                    <label for="bdate">Enter Your Birth Date</label><br>
+                    <input type="date" id="bdate"><hr><br>
+
+                    <input type="password" id="password" placeholder="Choose a strong password"><hr>
+                </form>
+                    <button onclick="signup()">Sign Up</button>
+            </div>
+        </div>
+    </main>
+    
+   
+</body>
+</html>
+
+<script src="/script.js"></script>
+<script src="/script2.js"></script>

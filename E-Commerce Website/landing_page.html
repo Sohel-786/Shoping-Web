@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body> 
+    <header>
+        <!-- header Logo -->
+
+        <div class="left_header">
+            <div class="hlogo">
+                <a href="/landing_page.html"><img src="/assets/logo.jpg" alt="header-logo"></a>
+            </div>
+    
+            <form>
+                <input type="text" id="search" placeholder="Search for Products">
+                <img src="/assets/search.png" alt="search-img">
+            </form>
+        </div>
+
+        <!--    login button -->
+        <!--  -->
+
+        <div class="login_section">
+            <a href="/sign_in_page.html" target="_blank"><button onmouseover="display_in_option()" onmouseout="display_none()">Login</button></a>
+
+            <div class="display_signup" onmouseover="display_in_option()" onmouseout="display_none()" >
+                <div class="triangle_holder">
+                    <div class="triangle">
+                    </div>
+                </div>
+              
+                <div>
+                    <p>New customer?</p>
+                    <a href="/sign_up_page.html">Sign Up</a>
+                </div>
+                <hr>
+                <div>
+                    <img src="/assets/profile.png" alt="profile">
+                    <p>My Profile</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="logout_section"> 
+            <button id="logout_btn"  onclick="logout()">
+                Log Out 
+                <img src="/assets/log out icon.png" alt="logout">
+            </button>
+        </div>
+
+        <div class = "right_header">
+            <div class="cart" onclick="redirect_to_carts()">
+                <img src="/assets/cart-icon-28348 (1).png" alt="cart-img">
+                <p>Cart</p>
+            </div>
+    
+            <div  class="avatar" onmouseover="avatar_extras()" onmouseout="hide_a_extras()">
+               
+                <div>
+                    <h3 class="avatar_h">Hi</h3>
+                    <div>
+                        <img src="/assets/Avatar-Profile-PNG-Photos.png" alt="avatar">
+                    </div>
+                </div>
+                
+                <div id="avatar_extras">
+
+                    <div class="display_signup">
+                        <div class="triangle_holder">
+                            <div class="triangle">
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <img src="/assets/profile.png" alt="profile">
+                            <p>My Profile</p>
+                        </div>
+
+                        <div id="product_ent">
+                            <a href="/product_entry_page.html">
+                                <p>New Product Entry</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        
+    </header>
+
+    <main>
+        <section class="multiple_options_top">
+            <div>
+                    <img src="/assets/product options/phones.webp" alt="Mobiles">
+                    <p onclick="show_category(event)">Mobiles</p>
+            </div>   
+            
+            <div>
+                    <img src="/assets/product options/electronics.webp" alt="Electronics">
+                    <p onclick="show_category(event)">Electronics</p>
+            </div> 
+            
+            <div>
+                
+                    <img src="/assets/product options/fashion.webp" alt="Fashion">
+                    <p onclick="show_category(event)">Fashion</p>
+            </div> 
+
+            <div>
+               
+                    <img src="/assets/product options/grocery.webp" alt="Grocery">
+                    <p onclick="show_category(event)">Grocery</p>
+            </div>
+            
+            <div>
+                
+                    <img src="/assets/product options/home.webp" alt="Home">
+                    <p onclick="show_category(event)">Home</p>
+            </div>
+            
+            <div>
+                
+                    <img src="/assets/product options/TVs and Appliances.webp" alt="Appliances">
+                    <p onclick="show_category(event)">Appliances</p>
+            </div>
+            
+                
+            <div>
+    
+                    <img src="/assets/product options/two wheelers.webp" alt="Two Wheelers">
+                    <p onclick="show_category(event)">Vehicle</p>
+            </div>
+            
+        </section>
+
+        <section class="img_slide" onmouseover="stop_slide()" onmouseout="start_slide()">     
+                <img class="slide" src ="" alt="Img_slides">
+        </section>
+
+        <div onclick="left_shift()" class="left_arrow">
+            <img src="/assets/Right Arrow.png" alt="left_arrow">
+        </div>
+
+        <div onclick="right_shift()" class="right_arrow">
+            <img src="/assets/left Arrow.png" alt="right_arrow">
+        </div>
+
+        <section id="container">
+
+        </section>
+    </main>
+
+</body>
+</html>
+
+<script src="/script.js"></script>
+<script src="/script4.js"></script>

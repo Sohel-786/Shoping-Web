@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodcut Entry</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/style2.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        #btn{
+            position: absolute;
+            right: 300px;
+            font-size: 15px;
+            top: 14px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px 5px;
+            border: none;
+            font-size: 15px;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        hr{
+            width: 90%;
+            margin-bottom: 12px;
+            border: 1px solid #2874f0;
+        }
+      
+        main button {
+            border-color: white;
+            background-color:#01c601;
+            color: white;
+            font-weight: 600;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            margin-top: 40px;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+
+        main div:nth-child(1) button{
+            background-color: #00e3df;
+            color: #000000;
+        }
+
+        main button:hover{
+            border-color: white;
+            box-shadow: none;
+            color: white;
+            font-size: 15px;
+            background-color: #2875f0dc;
+        }
+
+        main button:active{
+            border-color: white;
+            background-color: rgb(220, 0, 0);
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        main #pr{
+            font-size: 35px;
+            font-weight: 900;
+            color: #2874f0;
+            filter: drop-shadow(-20px 16px 8px black);
+            margin: 30px 0px;
+        }
+
+        textarea {
+            outline: none;
+            border:none;
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        select{
+            margin-top: 15px;
+            padding: 5px 10px;
+            border:2px solid #2874f0;
+            outline-color:#00d11f;
+            border-radius: 5px;
+        }
+
+        #table{
+            margin-top: 30px;
+            border: 1px solid black;
+            width: 90%;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        table{
+            width: 100%;
+        }
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px 5px;
+        }
+
+        #td4{
+            width: 100px;
+            height: 100px;
+        }
+
+        #td4 img{
+                width: 100%;
+                height: 100%;
+        }
+
+        .delete{
+            color: red;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .delete:hover{
+            color: white;
+            background-color: red;
+            cursor: pointer;
+        }
+
+        .delete:active{
+            background-color: #ac0000;
+            font-weight: 800;
+            font-size: 28px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- header Logo -->
+        <div class="hlogo">
+            <a href="/landing_page.html"><img src="/assets/logo.jpg" alt="header-logo"></a>
+        </div>
+
+        <a href="/landing_page.html"><button id="btn">home</button></a>
+
+        <div class = "right_header">
+    
+            <div  class="avatar">
+               
+                <div>
+                    <h3 class="avatar_h">Hi</h3>
+                    <div>
+                        <img src="/assets/Avatar-Profile-PNG-Photos.png" alt="avatar">
+                    </div>
+                </div>
+                
+                <div id="avatar_extras">
+
+                    <div class="display_signup">
+                        <div class="triangle_holder">
+                            <div class="triangle">
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <img src="/assets/profile.png" alt="profile">
+                            <p>My Profile</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div>
+            <button onclick="show_newp_entry()">New Entry</button>
+            <button onclick="show_table()">Current Available Products</button>
+        </div>
+
+        <div id="entry">
+
+            <h1 id="pr">New Product Entry</h1>
+            <form>
+                <textarea type="text" id="pname" cols="24" rows="3" placeholder="Enter Product Description"></textarea><hr><br>
+                <input type="text" id="price" placeholder="Enter Price of the Product"><hr><br>
+                <input type="text" id="image" placeholder="Enter Image Link of the Product"><hr>
+
+                <label for="p_car">Select Product Category</label><br>
+                <select name="Category" id="p_cat">
+
+                    <option value="mobiles">Moblies</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="home">Home Furniture</option>
+                    <option value="appliances">Appliances</option>
+                    <option value="vehicle">Vehicle</option>
+
+                </select>
+            </form>
+            <button onclick="submit_product()">Submit</button>
+        </div>
+
+        <div id="table">
+            <h1>All Product Entries</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr.No.</th>
+                        <th>Product Description</th>
+                        <th>Product Price</th>
+                        <th>Product Image</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+        
+    </main>
+</body>
+</html>
+
+<script src="/script.js"></script>
+<script src="/script6.js"></script> 

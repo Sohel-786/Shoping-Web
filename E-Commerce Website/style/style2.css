@@ -1,0 +1,125 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup_section{
+    margin-top: 50px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    width: 70vw;
+}
+
+#signup_section div:nth-child(1){
+    width: 50%;
+    height: 490px; 
+    margin-right: 30px;
+}
+
+#signup_section div:nth-child(2){
+    margin-top: 25px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#signup_section img[alt=Signup_Images]{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    z-index: -1;
+}
+
+#signup_section div form input {
+    width: 90%;
+    padding: 10px 5px;
+    border: none;
+    font-size: 15px;
+}
+
+#signup_section div form input:focus{
+    outline: none;
+}
+
+#signup_section div form input::placeholder, #signup_section div form label{
+    color: #2875f08f;
+}
+
+#signup_section div form hr{
+    width: 90%;
+    margin-bottom: 12px;
+    border: 1px solid #2874f0;
+  
+}
+
+#signup_section div form{
+    width: 100%;
+}
+
+#signup_section div button{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 550;
+    color: white;
+    background-color: #2874f0;
+    border: 2px solid #f4f3f3;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#signup_section div button:hover{
+    color: #2874f0;
+    background-color: white;
+    border-color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#signup_section div button:active{
+    border: 3px solid #28f0f0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+header button:hover{
+    color: white;
+    background-color: #28adf080;
+    border-color: white;
+}
+
+
+#signup_section div h1 {
+    color: white;
+    position: absolute;
+    top: 270px;
+    left: 220px;
+    text-align: center;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    z-index: 1;
+    filter: drop-shadow(16px 16px 8px black);
+}
+
+#signup_section .sign_up h1{
+    color: black;
+    position: static;
+    filter: none;
+    margin-bottom: 5px;
+}
+
+#signup_section .sign_up:nth-child(2){
+    margin-top: 0px;
+}

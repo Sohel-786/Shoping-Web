@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Info</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/style4.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!-- header Logo -->
+        <div class="left_header">
+            <div class="hlogo">
+                <a href="/landing_page.html"><img src="/assets/logo.jpg" alt="header-logo"></a>
+            </div>
+    
+            <form>
+                <input type="text" id="search" placeholder="Search for Products">
+                <img src="/assets/search.png" alt="search-img">
+            </form>
+        </div>
+
+        <div class="login_section">
+            <a href="/sign_in_page.html" target="_blank"><button onmouseover="display_in_option()" onmouseout="display_none()">Login</button></a>
+
+            <div class="display_signup" onmouseover="display_in_option()" onmouseout="display_none()" >
+                <div class="triangle_holder">
+                    <div class="triangle">
+                    </div>
+                </div>
+              
+                <div>
+                    <p>New customer?</p>
+                    <a href="/sign_up_page.html">Sign Up</a>
+                </div>
+                <hr>
+                <div>
+                    <img src="/assets/profile.png" alt="profile">
+                    <p>My Profile</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="logout_section"> 
+            <button id="logout_btn"  onclick="logout()">
+                Log Out 
+                <img src="/assets/log out icon.png" alt="logout">
+            </button>
+        </div>
+
+        <a href="/landing_page.html" style="z-index: 5;">
+            <img src="/assets/home_logo.ico" alt="home_logo" title="Return Home">
+        </a>
+        
+        <div class = "right_header">
+            <div class="cart" onclick="redirect_to_carts()">
+                <img src="/assets/cart-icon-28348 (1).png" alt="cart-img">
+                <p>Cart</p>
+            </div>
+    
+            <div  class="avatar" onmouseover="avatar_extras()" onmouseout="hide_a_extras()">
+               
+                <div>
+                    <h3 class="avatar_h">Hi</h3>
+                    <div>
+                        <img src="/assets/Avatar-Profile-PNG-Photos.png" alt="avatar">
+                    </div>
+                </div>
+                
+                <div id="avatar_extras">
+
+                    <div class="display_signup">
+                        <div class="triangle_holder">
+                            <div class="triangle">
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <img src="/assets/profile.png" alt="profile">
+                            <p>My Profile</p>
+                        </div>
+
+                        <div id="product_ent" onclick="product_entry_page()">
+                            <p>New Product Entry</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="info_container">
+            <div>
+                <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/k/p/f/-original-imagg5drhw4zu3tb.jpeg?q=70" alt="product_img" class="pimg">
+            </div>
+
+            <div>
+                <button onclick="add_to_cart()"> 
+                    <img src="/assets/cart-icon-28346.png" alt="cart_icon">ADD TO CART</button>
+                <button> ₹ BUY NOW</button>
+            </div>
+        </div>
+
+        <div class="p_info_container">
+            <h1 class="p_name"></h1>
+            <p>Special price</p>
+            <h2 class="price"></h2>
+
+            <div>
+                <p>Services</p>
+                <div>
+                    <p>₹</p>
+                    <h3>Cash on Delivery <br>available</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<script src="/script.js"></script>
+<script src="/script4.js"></script>

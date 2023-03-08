@@ -1,0 +1,53 @@
+#signup_section div .signin hr{
+    border-color: #01c601;
+}
+
+#signup_section div .signin input::placeholder{
+    color: #208620;
+}
+
+#signup_section .sign_in button {
+    border-color: white;
+    background-color:#01c601;
+    color: white;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-top: 40px;
+}
+
+#signup_section .sign_in button:hover{
+    color: #208620;
+    border-color: #01c601;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+#signup_section .sign_in button:active{
+    border-color: white;
+    background-color:#01c601;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+#signup_section div:nth-child(2) .signin{
+    margin-top: 60px;
+}
+
+#signup_section div:nth-child(2) h1{
+    color: black;
+    position: static;
+    filter: none;
+}
+
+#signup_section .sign_in .new {
+    background-color: #2874f0;
+}
+
+#signup_section .sign_in .new:hover{
+    border-color: white;
+    box-shadow: none;
+    color: white;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #2875f0dc;
+}
+

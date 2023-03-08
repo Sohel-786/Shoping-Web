@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/style2.css">
+    <link rel="stylesheet" href="/style3.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+         <!-- header Logo -->
+         <div class="left_header">
+            <div class="hlogo">
+                <a href="/landing_page.html"><img src="/assets/logo.jpg" alt="header-logo"></a>
+            </div>
+        </div>
+        <a href="/sign_up_page.html">
+            <button style="position: absolute; right: 20px; top: 15.8px;">Sign Up</button>
+        </a>
+        
+        <a href="/landing_page.html"><button style="position: absolute; right: 170px; top: 15.8px;">Home</button></a>
+        
+    </header>
+
+    <main>
+        <div id="signup_section">
+            <div>
+                <h1>Welcome&#128522;<br> Start Shopping <br> By Signing In</h1>
+                <img class="signup_slide" src="" alt="Signup_Images">
+            </div>
+            
+            <div class="sign_in">
+                <h1>Sign In</h1>
+                <form class="signin">
+                    <input type="text" id="emailphone" placeholder="Enter Email or Phone Number"><hr><br>
+                    <input type="password" id="password" placeholder="Enter Your Password" onkeypress="key_press(event)"><hr>
+                </form>
+                <button onclick="sign_in()">Sign In</button>
+                <a href="/sign_up_page.html"><button class="new">Create new account</button></a>
+            </div>
+        </div>
+    </main>
+    
+   
+</body>
+</html>
+
+
+<script src="/script3.js"></script>
+<script src="/script.js"></script>
+
+
+
