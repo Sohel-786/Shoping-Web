@@ -259,15 +259,26 @@ function submit_product(){
     let img = data.image.value;
     let p_cat = data.p_cat.value;
 
-    let product = {
-        pname,
-        price,
-        img,
-        p_cat
+    // let product = {
+    //     pname,
+    //     price,
+    //     img,
+    //     p_cat
+    // }
+
+    class Product {
+        constructor(name,p,url,category){
+            this.pname = name;
+            this.price = p;
+            this.img = url;
+            this.p_cat = category;
+        }
     }
 
-    let pdetail;
-     pdetail = localStorage.getItem('product_details');
+    let product  = new Product(pname,price,img,p_cat);
+
+
+    let pdetail = localStorage.getItem('product_details');
 
     if(pdetail == null){
         pdetail = [];
