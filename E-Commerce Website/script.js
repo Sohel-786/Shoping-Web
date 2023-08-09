@@ -50,6 +50,7 @@ function key_press(e){
     let emailphone = data.emailphone.value;
     let pass = data.password.value;
 
+    console.log(typeof pass);
     let signin_arr;
 
     signin_arr = localStorage.getItem('signup');
@@ -65,10 +66,11 @@ function key_press(e){
 
         let obj = signin_arr[i];
 
- 
+        console.log(typeof obj.password)
         if(obj.email == emailphone || obj.phone == emailphone ){
          
-            if(obj.password == pass){
+            if(obj.password == pass.toString()){
+            
                 
                 let user_log = localStorage.getItem('user_log');
                 let current_user = [];
